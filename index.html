@@ -4,18 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="color.css">
     <title>PAGINA 1</title>
   </head>
   <body>
     <form>
-      <label for="texto">Ingresa un texto para contabilizar:</label>
-      <input type="text" id="texto" name="texto" />
-      <button type="button" onclick="contarCaracteres()">
-        Contar caracteres
-      </button>
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <label class="col">
+            Ingresa un texto para contabilizar:
+          </label>
+          <input class="col" type="text" id="texto" name="texto" />
+          <label class="col">
+            <p>La cantidad de caracteres es: <span id="contador"></span></p>
+          </label>
+        </div>
+      </div>
     </form>
-    <p>La cantidad de caracteres es: <span id="contador"></span></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="contador.js"></script>
   </body>
 </html>
+ 
