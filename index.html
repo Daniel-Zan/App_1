@@ -9,18 +9,21 @@
     <title>PAGINA 1</title>
   </head>
   <body>
+    <header>
+      <h1>Contador de caracteres EJERCICIO 1</h1>
+    </header>
     <form>
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <label class="col">
+      <main class="container text-center">
+        <article class="row align-items-start">
+          <label class="col-md-4 col-sm-12"> 
             Ingresa un texto para contabilizar:
           </label>
-          <input class="col" type="text" id="texto" name="texto" />
-          <label class="col">
+          <input class="col-md-4 col-sm-12 text" type="text" id="texto" name="texto" placeholder="ESCRIBE AQUÍ" />
+          <label class="col-md-4 col-sm-12">
             <p>La cantidad de caracteres es: <span id="contador"></span></p>
           </label>
-        </div>
-      </div>
+        </article>
+      </main>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
