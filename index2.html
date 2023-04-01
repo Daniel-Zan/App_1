@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="color2.css" />
-    <title>Verificar tipo de dato</title>
-  </head>
-  <body>
-    <a href="main.html">VOLVER</a>
-    <label for="valor">Ingrese un valor:</label>
-    <input type="text" id="valor" />
-    <button onclick="verificarTipo()">Verificar</button>
-    <p id="resultado"></p>
-    <script>
-      function verificarTipo() {
-        const valor = document.getElementById("valor").value;
-        if (!isNaN(valor)) {
-          document.getElementById("resultado").innerHTML =
-            valor + " es un número.";
-        } else {
-          document.getElementById("resultado").innerHTML =
-            valor + " es un texto.";
-        }
-      }
-    </script>
-  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Verificar Tipo de Dato</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="color2.css">
+</head>
+<body>
+  <a href="main.html" class="container text-center">VOLVER</a>
+	<header>
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">Verificar Tipo de Dato</a>
+		</nav>
+	</header>
+	<main>
+		<section class="container">
+			<h1>Ingrese un Valor</h1>
+			<input type="text" id="valor">
+			<button id="verificar">Verificar</button>
+			<p id="resultado"></p>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="index2.js"></script>
+</body>
 </html>

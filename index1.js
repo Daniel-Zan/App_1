@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $("#texto").keyup(function(){
+$(document).ready(function () {
+  $("#texto").keyup(function () {
     var cantidad = $(this).val().length;
     $("#contador").text(cantidad);
   });
