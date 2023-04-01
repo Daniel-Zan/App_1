@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="color2.css">
+    <title>Verificar tipo de dato</title>
+  </head>
+  <body>
+    <label for="valor">Ingrese un valor:</label>
+    <input type="text" id="valor">
+    <button onclick="verificarTipo()">Verificar</button>
+    <p id="resultado"></p>
+    <script>
+      function verificarTipo() {
+        const valor = document.getElementById("valor").value;
+        if (!isNaN(valor)) {
+          document.getElementById("resultado").innerHTML = valor + " es un número.";
+        } else {
+          document.getElementById("resultado").innerHTML = valor + " es un texto.";
+        }
+      }
+    </script>
+  </body>
+</html>
