@@ -36,3 +36,29 @@ p {
   font-size: 18px;
   margin-top: 20px;
 }
+
+.button-back {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-back {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("flecha-atras.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
