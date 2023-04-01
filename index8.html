@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares e impares</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="color8.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Números pares e impares</a>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        <article class="row">
+            <article class="col-12">
+                <h1>Identifica números pares e impares</h1>
+                <hr>
+            </article>
+            <articleclass="col-12 col-md-6">
+                <form>
+                    <article class="form-group">
+                        <label for="inputNumbers">Ingresa una lista de números separados por coma:</label>
+                        <input type="text" class="form-control" id="inputNumbers" placeholder="Ej: 2, 5, 8, 9">
+                    </article>
+                    <button type="button" class="btn btn-primary" onclick="identifyNumbers()">Identificar números</button>
+                </form>
+            </article>
+            <article class="col-12 col-md-6">
+                <h2>Números pares</h2>
+                <ul id="evenList"></ul>
+                <h2>Números impares</h2>
+                <ul id="oddList"></ul>
+            </article>
+        </article>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="par.js"></script>
+</body>
+</html>
