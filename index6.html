@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Buscar en Texto</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="color6.css" />
+  </head>
+  <body>
+    <a href="main.html" class="container text-center">VOLVER</a>
+    <main>
+      <section>
+        <h1>Buscar en Texto</h1>
+        <area class="form-group">
+          <label for="texto">Ingrese un texto:</label>
+          <textarea class="form-control" id="texto" rows="5"></textarea>
+      </area>
+        <area class="form-group">
+          <label for="busqueda">Buscar:</label>
+          <input type="text" class="form-control" id="busqueda" />
+    </area>
+        <button type="button" class="btn btn-primary" id="buscar">
+          Buscar
+        </button>
+      </section>
+      <section id="resultado">
+        <h2>Resultados</h2>
+        <p id="sin-resultados" class="d-none">No se encontraron resultados</p>
+        <p id="resultados"></p>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="coincidencias.js"></script>
+  </body>
+</html>

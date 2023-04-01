@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+#resultado {
+    margin-top: 2rem;
+}
+
+#sin-resultados {
+    color: #dc3545;
+}
