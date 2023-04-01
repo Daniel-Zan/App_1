@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Promedio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="color.css">
+    <meta charset="UTF-8">
+    <title>Calificaciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="color4.css">
   </head>
   <body>
-    <main role="mainclass="container mt-5>
-      <h1 class="text-center">Calculadora de Promedio</h1>
-      <form class="mt-5">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control mb-3" id="nombre" required />
-        <label for="materia">Materia:</label>
-        <input type="text" class="form-control mb-3" id="materia" required />
-        <label for="nota1">Nota 1:</label>
-        <input type="number" class="form-control mb-3" id="nota1" required />
-        <label for="nota2">Nota 2:</label>
-        <input type="number" class="form-control mb-3" id="nota2" required />
-        <label for="nota3">Nota 3:</label>
-        <input type="number" class="form-control mb-3" id="nota3" required />
-        <button type="submit" class="btn btn-primary">Calcular</button>
+    <main class="container">
+      <form>
+        <h1>Calificaciones</h1>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="materia">Materia</label>
+          <input type="text" class="form-control" id="materia" placeholder="Ingresa el nombre de la materia">
+        </div>
+        <div class="form-group">
+          <label for="nota1">Nota 1</label>
+          <input type="number" class="form-control" id="nota1" placeholder="Ingresa la nota 1">
+        </div>
+        <div class="form-group">
+          <label for="nota2">Nota 2</label>
+          <input type="number" class="form-control" id="nota2" placeholder="Ingresa la nota 2">
+        </div>
+        <div class="form-group">
+          <label for="nota3">Nota 3</label>
+          <input type="number" class="form-control" id="nota3" placeholder="Ingresa la nota 3">
+        </div>
+        <button type="button" class="btn btn-primary" id="calcular">Calcular promedio</button>
       </form>
+      <h2 id="resultado"></h2>
     </main>
-      <p id="resultado" class="text-center"></p>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="resultado.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="calificaciones.js"></script>
   </body>
 </html>
